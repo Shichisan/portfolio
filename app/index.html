@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/fixed-positioning.css">
+  <!-- <link rel="stylesheet" href="src/css/main.css"> -->
   <script type="text/javascript" src="src/bower_components/dist/jquery.js"></script>
 </head>
 <body>
-  <div id="bg1" data-2000="background-position: 800px -1000px;" data-0="background-position: 0px 0px;">
+  <div id="content1" data-0="top:0%;opacity:1;" data-3000="top:100%;opacity:0.3;" >
   </div>
-  <h1 class="portfolio-title">Portfolio</h1>
+
+  <div id="content2" data-3000="opacity:1;" data-6000="opacity:0;">
+  </div>
+
+  <div id="content3" data-6000="top:0%" data-9000="top:100%">
+  </div>
+
+  <div id="content4" data-6000="background-position:0px 0px;" data-12500="background-position:0px -500px;">
+  </div>
+
+  <div class="introduction-title" data-0="left: 50%;opacity: 1;" data-2500="left:-90%;opacity: 0;" data-3000="left: -110%;">
+    <h1>Portfolio</h1>
+    <h3>When I noticed my signpost was there</h3>
+  </div>
+
+  <div class="easing">
+    <p data-6500="left:50%;top[cubic]:100%;" data-9000="top:0%;">cubic</p>
+    <p data-6500="left:30%;bottom[quadratic]:100%;" data-9000="bottom:0%;">quadratic</p>
+    <p data-6500="left:70%;bottom[swing]:100%;" data-9000="bottom:0%;">swing</p>
+  <!-- / .easing --></div>
+
+  <p class="end" data-10000="opacity:0;left:50%;top:50%;" data-11000="opacity:1">end</p>
+
   <script type="text/javascript" src="src/js/lib/skrollr.min.js"></script>
   <script type="text/javascript">
     var s = skrollr.init();
