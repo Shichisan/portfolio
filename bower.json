@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Shichisan <tr250choppermank.r.t@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Shichisan/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
