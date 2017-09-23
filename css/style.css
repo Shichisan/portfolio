@@ -1,0 +1,7 @@
+body {
+  font-family: serif;
+  color: #555;
+  overflow-x: hidden;
+  background: url(../img/tower.jpg) repeat 0 0 scroll;
+  background-size: cover;
+}
