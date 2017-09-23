@@ -1,2 +1,6 @@
 # .DS_Storeはいらない
 .DS_Store
+
+# ライブラリ格納場所系もいらない
+node_modules
+bower_components
