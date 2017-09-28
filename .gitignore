@@ -3,4 +3,4 @@
 
 # ライブラリ格納場所系もいらない
 node_modules
-bower_components
+app/src/bower_components
