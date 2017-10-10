@@ -1,5 +1,6 @@
 // variable
 $main_font_color: #FCFCFC;
+$content_background: #2a2a2a;
 
 // mixin
 @mixin centeral-u-margin {
@@ -96,5 +97,41 @@ div {
   top: 25rem;
   h3 {
     margin-top: 1rem;
+  }
+}
+
+.self-introduction {
+  width: 60rem;
+  height: 35rem;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  background-color: $content_background;
+  top: 12%;
+}
+
+.self-image {
+  float: left;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-image: url(../img/self.jpg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: left center;
+  margin: 8rem 0 0 4.5rem;
+  border: 6px solid #e6e6e6;
+}
+
+.self-description {
+  float: left;
+  width: 30rem;
+  height: 20rem;
+  top: 26%;
+  left: 45%;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  p {
+    line-height: 1.7;
+    letter-spacing: 1.6px;
   }
 }
