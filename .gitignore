@@ -4,3 +4,4 @@
 # ライブラリ格納場所系もいらない
 node_modules
 app/src/bower_components
+app/src/css/style.css

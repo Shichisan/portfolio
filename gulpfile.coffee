@@ -5,6 +5,7 @@ sass = require 'gulp-sass'
 coffee = require 'gulp-coffee'
 browserSync = require('browser-sync').create()
 gbowerTask = require 'gulp-bower-task'
+imagemin = require 'gulp-imagemin'
 
 gulp.task 'compile-bower', ->
   gulp.src './bower.json'
@@ -34,6 +35,11 @@ gulp.task 'coffee-watch', ['coffee'], ->
     browserSync.reload()
   return
 
+gulp.task 'compile-images', ->
+  gulp.src srcDir + '/img/*'
+    .pipe(imagemin())
+    .pipe gulp.dest(srcDir + '/img/')
+
 gulp.task 'browser-sync', ->
   browserSync.init server:
     baseDir: 'app'
@@ -44,6 +50,6 @@ gulp.task 'bs-reload', ->
   browserSync.reload()
   return
 
-gulp.task 'default', ['sass-watch', 'compile-coffee', 'browser-sync', 'compile-bower'], ->
+gulp.task 'default', ['sass-watch', 'compile-coffee', 'browser-sync', 'compile-bower', 'compile-images'], ->
   gulp.watch 'app/index.html', ['bs-reload']
   return
