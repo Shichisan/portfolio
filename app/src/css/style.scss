@@ -1,6 +1,11 @@
 // variable
 $main_font_color: #FCFCFC;
+$self_border_color: #e6e6e6;
 $content_background: #2a2a2a;
+$transparent_black: rgba(0,0,0,0.4);
+$transparent_white: rgba(255,255,255,0.4);
+$gallaly_background: #F7F7F7;
+$photos_title_color: #4a4a4a;
 
 // mixin
 @mixin centeral-u-margin {
@@ -47,6 +52,14 @@ h3 {
 div {
   width: 100% ;
   height: 187.5rem;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 #content1, #content2, #content3, #content4 {
@@ -103,7 +116,7 @@ div {
 .self-introduction {
   width: 60rem;
   height: 35rem;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 3px $transparent_black;
   background-color: $content_background;
   top: 12%;
 }
@@ -118,7 +131,7 @@ div {
   background-size: 160%;
   background-position: left center;
   margin: 8rem 0 0 4.5rem;
-  border: 6px solid #e6e6e6;
+  border: 6px solid $self_border_color;
 }
 
 .self-description {
@@ -141,6 +154,9 @@ div {
   height: 80%;
   margin-top: 4rem;
   left: 45%;
+  h2 {
+    margin-left: .9rem;
+  }
   .skill {
     height: 6rem;
     padding: 1rem;
@@ -155,5 +171,92 @@ div {
       margin-top: 2.4rem;
       height: 1.5rem;
     }
+  }
+}
+
+#intern_div {
+  width: 100vw;
+  height: 100vh;
+  z-index: 96;
+  background: $content_background;
+  h2 {
+    position: relative;
+    top: 2rem;
+    left: 11rem;
+  }
+  .intern-contents {
+    @include centeral-u-margin;
+    width: 75%;
+    height: 40rem;
+    margin-top: 4rem;
+    .intern-content {
+      float: left;
+      width: 50%;
+      height: 50%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      background-blend-mode: overlay;
+
+    }
+    .sarah {
+      background-image: url(../img/sarah.png);
+      background-color: $transparent_white;
+    }
+    .wantedly {
+      background-image: url(../img/wantedly.png);
+      background-color: $transparent_black;
+    }
+    .lifeistech {
+      background-image: url(../img/lifeistech.png);
+      background-color: $transparent_black;
+    }
+    .goodpatch {
+      background-image: url(../img/goodpatch.png);
+      background-color: $transparent_white;
+    }
+  }
+}
+
+#takes_photos {
+  width: 100vw;
+  height: auto;
+  z-index: 95;
+  background: $gallaly_background;
+  padding: 2rem;
+  h2 {
+    color: $photos_title_color;
+    padding: 2rem 0 1rem 4.4rem;
+  }
+  .photos {
+    @include centeral-u-margin;
+    width: 90%;
+    height: auto;
+    .photo {
+      width: 25%;
+      height: 13.4rem;
+      float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+}
+
+footer {
+  @include centeral-u-text-align;
+  @include centeral-u-margin;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  a, img {
+    display: inline-block;
+  }
+  p {
+    margin-bottom: 1rem;
   }
 }
