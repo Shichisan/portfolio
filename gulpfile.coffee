@@ -6,6 +6,7 @@ coffee = require 'gulp-coffee'
 browserSync = require('browser-sync').create()
 gbowerTask = require 'gulp-bower-task'
 imagemin = require 'gulp-imagemin'
+deploy = require 'gulp-gh-pages'
 
 gulp.task 'compile-bower', ->
   gulp.src './bower.json'
@@ -48,6 +49,11 @@ gulp.task 'browser-sync', ->
 
 gulp.task 'bs-reload', ->
   browserSync.reload()
+  return
+
+gulp.task 'deploy', ->
+  gulp.src './**/*'
+    .pipe deploy()
   return
 
 gulp.task 'default', ['sass-watch', 'compile-coffee', 'browser-sync', 'compile-bower', 'compile-images'], ->
