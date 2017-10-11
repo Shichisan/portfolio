@@ -28,6 +28,7 @@ $content_background: #2a2a2a;
 body {
   margin: 0;
   font-family: 'ubuntu-monospace', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;;
+  background: $content_background;
 }
 
 * {
@@ -80,7 +81,6 @@ div {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 #content4 {
   z-index: 95;
   background-image: url(../img/tower.jpg);
@@ -133,5 +133,27 @@ div {
   p {
     line-height: 1.7;
     letter-spacing: 1.6px;
+  }
+}
+
+.skills {
+  width: 45%;
+  height: 80%;
+  margin-top: 5rem;
+  left: 45%;
+  .skill {
+    height: 6rem;
+    padding: 1rem;
+    .skill-image {
+      float: right;
+      margin-top: 1rem;
+    }
+    .logo-css {
+      margin-top: 0;
+    }
+    .skill-bar {
+      margin-top: 2.4rem;
+      height: 1.5rem;
+    }
   }
 }

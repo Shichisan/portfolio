@@ -10,17 +10,10 @@
   <script type="text/javascript" src="src/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-  <div id="content1" data-0="top:0%;opacity:1;" data-1000="top:100%;opacity:0.3;" >
-  </div>
-
-  <div id="content2" data-3000="opacity:1;" data-3500="opacity:1;" data-4000="opacity: 0;">
-  </div>
-
-  <div id="content3" data-6000="top:0%" data-9000="top:100%">
-  </div>
-
-  <div id="content4" data-6000="background-position:0px 0px;" data-12500="background-position:0px -500px;">
-  </div>
+  <div id="content1" data-0="top:0%;opacity:1;" data-1000="top:100%;opacity:0.3;" ></div>
+  <div id="content2" data-3000="opacity:1;" data-3500="opacity:1;" data-4000="opacity: 0;"></div>
+  <div id="content3" data-7300="top:0%" data-9000="top:100%"></div>
+  <div id="content4" data-6000="background-position:0px 0px;" data-12500="background-position:0px -500px;"></div>
 
   <div class="introduction-title" data-0="left: 50%;opacity: 1;" data-1000="left: -110%;">
     <h1>Portfolio</h1>
@@ -43,18 +36,33 @@
       <p>
         ユーザにもソースを共有する周りのエンジニアにも優しい実装を行いたい。<br>
         提供するサービスはもちろんそれを構成するコードもきれいに保つことは結果的にユーザにとっても一緒に働いているエンジニアにとってもいい影響をもたらすことができると考えている。</br>
-        自分自身の実装に対しては、「なぜそうしたのか？」をはっきり自分の言葉で話せるような実装を行いたい。
-      </p5
+        自分自身の実装に対しては、「なぜそうしたのか？」を自分の言葉で表現できるような実装を行いたい。
+      </p>
     </div>
   </div>
 
-  <div class="easing">
-    <p data-6500="left:50%;top[cubic]:100%;" data-9000="top:0%;">cubic</p>
-    <p data-6500="left:30%;bottom[quadratic]:100%;" data-9000="bottom:0%;">quadratic</p>
-    <p data-6500="left:70%;bottom[swing]:100%;" data-9000="bottom:0%;">swing</p>
+  <div class="skills" data-4100="opacity: 0;" data-4500="opacity: 1;" data-7000="opacity: 1;" data-7200="opacity: 0;">
+    <div class="skill">
+      <div class="skill-bar" id="progress" data-4500="width:0%;background:rgb(212, 212, 212);" data-6700="width:45%;background:rgb(212, 212, 212);"></div>
+      <img class="skill-image" src="src/img/logo-html.png" width="10%">
+    </div>
+    <div class="skill">
+      <div class="skill-bar" id="progress" data-4500="width:0%;background:rgb(212, 212, 212);" data-6700="width:45%;background:rgb(212, 212, 212);"></div>
+      <img class="skill-image logo-css" src="src/img/logo-css3.png" width="10%">
+    </div>
+    <div class="skill">
+      <div class="skill-bar" id="progress" data-4500="width:0%;background:rgb(212, 212, 212);" data-6700="width:30%;background:rgb(212, 212, 212);"></div>
+      <img class="skill-image" src="src/img/logo-js.png" width="10%">
+    </div>
+    <div class="skill">
+      <div class="skill-bar" id="progress" data-4500="width:0%;background:rgb(212, 212, 212);" data-6700="width:62%;background:rgb(212, 212, 212);"></div>
+      <img class="skill-image" src="src/img/logo-ruby.png" width="10%">
+    </div>
+    <div class="skill">
+      <div class="skill-bar" id="progress" data-4500="width:0%;background:rgb(212, 212, 212);" data-6700="width:68%;background:rgb(212, 212, 212);"></div>
+      <img class="skill-image" src="src/img/logo-rails.png" width="10%">
+    </div>
   </div>
-
-  <p class="end" data-10000="opacity:0;left:50%;top:50%;" data-11000="opacity:1">end</p>
 
   <script type="text/javascript" src="src/bower_components/bower-skrollr/skrollr.min.js"></script>
   <script type="text/javascript">
